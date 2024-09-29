@@ -29,6 +29,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const routes_1 = require("./routes");
 const app = (0, express_1.default)();
 //to access .env
 dotenv_1.default.config();
@@ -37,6 +38,11 @@ app.use((0, cors_1.default)());
 app.use((0, express_1.json)());
 //accessing .env
 const PORT = process.env.PORT || 5000;
+//Using Routes from Routes folder
+app.use('/api/diagnosis', routes_1.diagnosisRoute);
+app.use('/api/users', routes_1.userRoute);
+app.use('/api/patients', routes_1.patientRoute);
+app.use('/api/appointments', routes_1.appointmentRoute);
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

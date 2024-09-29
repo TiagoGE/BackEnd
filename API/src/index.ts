@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 5000
 
 //Using Routes from Routes folder
 app.use('/api/diagnosis', diagnosisRoute)
-app.use('/api/userRoute', userRoute)
+app.use('/api/users', userRoute)
 app.use('/api/patients', patientRoute)
 app.use('/api/appointments', appointmentRoute)
 
