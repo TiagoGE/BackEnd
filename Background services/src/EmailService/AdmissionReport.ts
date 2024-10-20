@@ -42,7 +42,7 @@ const AdmissionReportEmail = async () => {
 
                     attachments: [
                         {
-                            filename: "DailyReport.txt",
+                            filename: "DailyReport.csv",
                             content: csv
                         }
                     ]
@@ -51,7 +51,7 @@ const AdmissionReportEmail = async () => {
                 try {
 
                     await sendEmail(messageOption);
-                    await db.exec('updatePatientsEmailSent')
+                    await db.exec('updatePatientEmailSent')
 
                 } catch (error) {
                     console.log(error);

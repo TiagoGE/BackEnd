@@ -23,7 +23,7 @@ const AppointmentEMail = async () => {
 
     for (let appoint of appointment) {
 
-        ejs.renderFile('template/appointment.ejs', { name: appoint.patient_name, date: appoint.date },
+        ejs.renderFile('templates/appointment.ejs', { name: appoint.patient_name, date: appoint.date },
             async (err, data) => {
 
                 let messageOption = {
