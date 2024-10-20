@@ -20,4 +20,5 @@ exports.sqlconfig = {
         encrypt: true,
         trustServerCertificate: true,
     },
+    port: 1401,
 };

@@ -16,10 +16,10 @@ const run = () => {
 
     cron.schedule('* * * * *', () => {
 
-        WelcomeEmail()
-        AdmissionReportEmail()
-        AppointmentEMail()
-        DiagnosisEmail()
+        WelcomeEmail();
+        AdmissionReportEmail();
+        AppointmentEMail();
+        DiagnosisEmail();
     });
 }
 
