@@ -6,8 +6,12 @@ Clone or download the repository.
 Navigate to the project folder.
 Inside the API folder, run:
 'npm install'
+To start the API run:
+'npm start'
 Navigate to the BackgroundServices folder and repeat the installation:
 'npm install'
+To start the background services run:
+'npm start'
 
 
 Functionalities
